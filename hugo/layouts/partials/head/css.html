@@ -30,12 +30,36 @@
         margin: 0px;
     }
 
+    .logo {
+        width: 150px; height: 60px;
+    }
+    .post-list{
+        padding-left: 10%; 
+        padding-right: 10%;
+    }
     .post {
         border: 1px solid #dae1e7;
         margin-bottom: 5px;
-        width: 100%;
         padding-left: 22px;
         padding-right: 22px;
+    }
+    @media only screen and (max-width: 600px) {
+        .post-list {
+            padding-left: 0; 
+            padding-right: 0;
+        }
+        .post {
+            padding-left: 1%; 
+            padding-right: 1%;
+            word-break: break-word;
+            font-size: 10pt;
+        }
+        .nav-wrapper {
+            font-size: 9pt;
+        }
+        .logo {
+            width: 100px; height: 45px;
+        }
     }
     .animated {
         -webkit-animation-duration: 1s;

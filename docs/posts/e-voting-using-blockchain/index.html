@@ -45,12 +45,36 @@ E-voting using Blockchain &ndash; pownthep.io
         margin: 0px;
     }
 
+    .logo {
+        width: 150px; height: 60px;
+    }
+    .post-list{
+        padding-left: 10%; 
+        padding-right: 10%;
+    }
     .post {
         border: 1px solid #dae1e7;
         margin-bottom: 5px;
-        width: 100%;
         padding-left: 22px;
         padding-right: 22px;
+    }
+    @media only screen and (max-width: 600px) {
+        .post-list {
+            padding-left: 0; 
+            padding-right: 0;
+        }
+        .post {
+            padding-left: 1%; 
+            padding-right: 1%;
+            word-break: break-word;
+            font-size: 10pt;
+        }
+        .nav-wrapper {
+            font-size: 9pt;
+        }
+        .logo {
+            width: 100px; height: 45px;
+        }
     }
     .animated {
         -webkit-animation-duration: 1s;
@@ -100,7 +124,7 @@ E-voting using Blockchain &ndash; pownthep.io
     <div class="nav-wrapper">
     <div style="text-align: center; display: inline-block; margin-right: 10px; float: left;">
         <a href="https://pownthep.github.io/portfolio/" aria-label="home page">
-            <svg style="width: 150px; height: 60px;" xmlns="http://www.w3.org/2000/svg" width="440" height="200" viewBox="0 0 440 200"><g transform="translate(-6198 -3269)"><path d="M125,30h0L31.9,63.2,46.1,186.3,125,230h0l78.9-43.7L218.1,63.2Z" transform="translate(6166.1 3239)" fill="#10365d"/><path d="M125,30V153.4h0V230h0l78.9-43.7L218.1,63.2Z" transform="translate(6166.1 3239)" fill="#001f3f"/><text transform="translate(6226 3394)" fill="#fff" font-size="60" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">POW</tspan><tspan y="0" fill="#8592a1">N</tspan><tspan y="0" fill="#001f3f">THEP.IO</tspan></text></g></svg>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="440" height="200" viewBox="0 0 440 200"><g transform="translate(-6198 -3269)"><path d="M125,30h0L31.9,63.2,46.1,186.3,125,230h0l78.9-43.7L218.1,63.2Z" transform="translate(6166.1 3239)" fill="#10365d"/><path d="M125,30V153.4h0V230h0l78.9-43.7L218.1,63.2Z" transform="translate(6166.1 3239)" fill="#001f3f"/><text transform="translate(6226 3394)" fill="#fff" font-size="60" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">POW</tspan><tspan y="0" fill="#8592a1">N</tspan><tspan y="0" fill="#001f3f">THEP.IO</tspan></text></g></svg>
         </a>
     </div>
     <div style="text-align: center; display: inline-block; margin-right: 10px;">
@@ -125,7 +149,7 @@ E-voting using Blockchain &ndash; pownthep.io
 
     
     
-<div style="padding-left: 10%; padding-right: 10%; margin-top: 2%;">
+<div style="margin-top: 2%;" class="post-list">
     <div class="post animated fadeInDown">
         
 
