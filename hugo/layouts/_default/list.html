@@ -1,19 +1,20 @@
-
+{{ define "description" }}
+<meta name="Description" content="List of posts">
+{{ end }}
 {{ define "main" }}
-<main>
+<main style="padding-left: 10%; padding-right: 10%;">
     <article>
         <header>
-            <h1>{{.Title}}</h1>
         </header>
-        <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-        {{.Content}}
+        {{.Content}} 
     </article>
     {{ range .Pages }}
-        <ul>
-            <li>
-                <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-            </li>
-        </ul>
+        <div class="post animated fadeInDown">
+            <a href="{{.Permalink}}" aria-label="{{.Title}}"><p>{{.Title}}</p></a>
+            <p>
+                Published: {{.Date.Format "2006-01-02"}}
+            </p>
+        </div>
     {{ end }}
 </main>
 {{ end }}

@@ -1,0 +1,6 @@
+{{ partial "head/css.html" . }}
+<!-- <link defer rel="stylesheet" href="{{.Site.BaseURL}}css/main.css"/> -->
+
+<!-- Deferred loading non-critical CSS -->
+<link rel="preload" href="{{.Site.BaseURL}}css/main.css" as="style" onload="this.onload=null; this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{.Site.BaseURL}}css/main.css"></noscript>

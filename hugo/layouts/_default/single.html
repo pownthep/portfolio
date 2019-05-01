@@ -1,8 +1,15 @@
 {{ define "title" }}
-<!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
 {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
+
+{{ define "description" }}
+<meta name="Description" content="{{.Title}}">
+{{ end }}
+
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ .Content }}
+<div style="padding-left: 10%; padding-right: 10%; margin-top: 2%;">
+    <div class="post animated fadeInDown">
+        {{ .Content }}
+    </div>
+</div>
 {{ end }}
