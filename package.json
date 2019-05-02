@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "hugo-server": "cd hugo && hugo server -wv --disableFastRender"
+    "hugo": "cd hugo && hugo server -wv --disableFastRender",
+    "build": "rm -rf docs && cd hugo && hugo"
   },
   "repository": {
     "type": "git",

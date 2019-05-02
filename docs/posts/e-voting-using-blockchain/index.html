@@ -58,6 +58,22 @@ E-voting using Blockchain &ndash; pownthep.io
         padding-left: 22px;
         padding-right: 22px;
     }
+    pre {
+        padding: 5px;
+        word-break: break-all;
+        overflow: auto;
+        border: 1px solid #dae1e7;
+        border-radius: 5px;
+    }
+    code {
+        font-family: Consolas;
+        font-size: 12pt;
+    }
+
+    figure {
+        margin-left: 0;
+    }
+
     @media only screen and (max-width: 600px) {
         .post-list {
             padding-left: 0; 
@@ -117,7 +133,6 @@ E-voting using Blockchain &ndash; pownthep.io
 <link rel="preload" href="https://pownthep.github.io/portfolio/css/main.css" as="style" onload="this.onload=null; this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://pownthep.github.io/portfolio/css/main.css"></noscript>
 
-
   </head>
   <body>
 
@@ -151,18 +166,207 @@ E-voting using Blockchain &ndash; pownthep.io
     
 <div style="margin-top: 2%;" class="post-list">
     <div class="post animated fadeInDown">
+        <h1 style="text-align:center;">E-voting using Blockchain</h1>
         
 
-<h1 id="e-voting-using-blockchain">E-voting using Blockchain</h1>
+<figure>
+    <img src="img/multichain.png"
+         alt="Angular router animations demo"/> 
+</figure>
 
-<pre><code class="language-javascript">console.log(&quot;Hello world!&quot;);
+
+<h2 id="this-post-will-show-you-how-to">This post will show you how to:</h2>
+
+<ul>
+<li>create REST API endpoints using the Express framework on Node JS</li>
+<li>set up a Blockchain for development purposes using Multichain</li>
+<li>get started on journey develop decentralized application</li>
+</ul>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+<li>A local computer</li>
+</ul>
+
+<h2 id="install-node-js">Install Node JS</h2>
+
+<p>Download and install Node JS from their official website: <a href="https://nodejs.org/en/">https://nodejs.org/en/</a>.</p>
+
+<h2 id="create-an-express-application">Create an Express application</h2>
+
+<p>Express is a javascript backend framework for building REST API endpoints.</p>
+
+<h3 id="install-express">Install Express</h3>
+
+<p>Open Terminal (macOS) or Command Prompt (Windows). <br></p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd Desktop</code></pre></div>
+<p>This command navigates you inside the Desktop folder.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir express</code></pre></div>
+<p>This command creates a folder named &ldquo;express&rdquo;.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd express</code></pre></div>
+<p>This command navigates into the &ldquo;express&rdquo; folder.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm init -y </code></pre></div>
+<p>This command creates a <code>package.json</code> file which contains meta data about your project and what packages your project uses.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install express --save</code></pre></div>
+<p>This command tells NPM (Node Package Manager) to <code>install</code> Express and <code>--save</code> updates the <code>package.json</code> to include Express as a project dependency.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">touch index.js</code></pre></div>
+<p>This will create an <code>index.js</code> file.</p>
+
+<hr />
+
+<h3 id="create-index-js-file">Create index.js file</h3>
+
+<p>Now open <code>index.js</code> in any code editor of your choice (VS Code).
+Copy and paste the following code.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">const</span> express = require(<span style="color:#a31515">&#39;express&#39;</span>)
+<span style="color:#008000">// Import the express package so you can use it.
+</span><span style="color:#008000"></span>
+<span style="color:#00f">const</span> app = express()
+<span style="color:#008000">// Initialize app as an express app.
+</span><span style="color:#008000"></span>
+<span style="color:#00f">const</span> port = 3000
+<span style="color:#008000">// Set port number.
+</span><span style="color:#008000"></span>
+app.get(<span style="color:#a31515">&#39;/&#39;</span>, (req, res) =&gt; res.send(<span style="color:#a31515">&#39;Hello World!&#39;</span>))
+<span style="color:#008000">// Create a REST API endpoint for a GET request 
+</span><span style="color:#008000">// that would return the string &#34;Hello World!&#34;.
+</span><span style="color:#008000"></span>
+app.listen(port, () =&gt; 
+    console.log(<span style="color:#a31515">`Example app listening on port </span><span style="color:#a31515">${</span>port<span style="color:#a31515">}</span><span style="color:#a31515">!`</span>))
+<span style="color:#008000">// Start listening for requests on port 3000.
+</span></code></pre></div>
+<p>On your Terminal or Command Prompt.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">node index.js</code></pre></div>
+<p>Now open a browser and type in.</p>
+
+<pre><code>http://localhost:3000
 </code></pre>
+
+<p>You should see <code>Hello World!</code></p>
+
+<h2 id="setup-blockchain-with-multichain">Setup Blockchain with Multichain</h2>
+
+<p>Multichain is an open platform for building blockchain and from my experience it is by far the easiest to install and setup.</p>
+
+<h3 id="setup-on-windows-10">Setup on Windows 10</h3>
+
+<h4 id="download-multichain">Download Multichain</h4>
+
+<ul>
+<li><a href="https://www.multichain.com/download/multichain-windows-2.0.1.zip">https://www.multichain.com/download/multichain-windows-2.0.1.zip</a>.</li>
+</ul>
+
+<h4 id="install-multichain">Install Multichain</h4>
+
+<ul>
+<li>Extract the multichain-windows-2.0.1.zip.</li>
+<li>Open Command Prompt.</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd multichain-windows-2.0.1</code></pre></div>
+<p>Navigate into multichain folder.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">multichain-util create chain1</code></pre></div>
+<p>This command create a Multichain configuration file that will be use when we start the Blockchain. <strong><em>&lsquo;chain1&rsquo;</em></strong> is the name of the Blockchain.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">multichaind chain1 -daemon</code></pre></div>
+<p>This command starts the <strong><em>&lsquo;chain1&rsquo;</em></strong> Blockchain. It should show something like this. <strong><em>Note that the IP and port number be different for you.</em></strong></p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">MultiChain 2.0.1 Daemon (Community Edition, latest protocol 20009)
+
+Looking for genesis block...
+Genesis block found
+
+Other nodes can connect to this node using:
+multichaind chain1@25.57.251.107:6737
+
+This host has multiple IP addresses, so from some networks:
+multichaind chain1@10.0.75.1:6737
+multichaind chain1@192.168.56.1:6737
+multichaind chain1@172.19.74.145:6737
+multichaind chain1@192.168.1.3:6737
+
+Listening for API requests on port 6736 (local only - see rpcallowip setting)
+
+Node ready.</code></pre></div>
+<p>In order for us to connect to the Blockchain using the Express application, we are going need 3 things:</p>
+
+<ol>
+<li>API requests port</li>
+<li>Username</li>
+<li>Password</li>
+</ol>
+
+<h4 id="api-requests-port">API requests port</h4>
+
+<p>Remember the port number that the Blockchain will listen for API requests. In my case, the port is <strong><em>6736</em></strong>.</p>
+
+<h4 id="username-passwrod">Username &amp; Passwrod</h4>
+
+<p>The password is randomly generated when we run <code>multichaind chain1 -daemon</code>, so we need to look at the <strong><em>multichain.conf</em></strong> file.</p>
+
+<p>You can find the file in <strong><em>&ldquo;User/YOURUSERNAME/Roaming/Multichain/chain1/multichain.conf&rdquo;</em></strong>. Replace <em>YOURUSERNAME</em> with your own username.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">rpcuser=multichainrpc
+rpcpassword=2FEKaUyPSf5GAb8XEaiQgy7SY2ZEZQ4GVfTDtfRDqQYT</code></pre></div>
+<p>So in my case, the username is <em>&ldquo;multichainrpc&rdquo;</em> and the password is <em>&ldquo;2FEKaUyPSf5GAb8XEaiQgy7SY2ZEZQ4GVfTDtfRDqQYT&rdquo;</em></p>
+
+<h3 id="setup-on-macos">Setup on macOS</h3>
+
+<p><em>Coming soon</em></p>
+
+<h2 id="create-multichain-rest-api-endpoints">Create Multichain REST API endpoints</h2>
+
+<p>Now it&rsquo;s time to go back our Express application and implement some Multichain REST API endpoints.</p>
+
+<h3 id="install-multichain-node">Install multichain-node</h3>
+
+<ul>
+<li>Open Terminal or Command Prompt</li>
+<li>Navigate to the Express app folder</li>
+<li>Run <code>npm install multichain-node --save</code></li>
+<li>Open <em>index.js</em> and paste the following code</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">let</span> multichain = require(<span style="color:#a31515">&#34;multichain-node&#34;</span>)({
+    port: 6736, <span style="color:#008000">// TODO: Replace with the port you got from the last step
+</span><span style="color:#008000"></span>    host: <span style="color:#a31515">&#39;127.0.0.1&#39;</span>,
+    user: <span style="color:#a31515">&#34;multichainrpc&#34;</span>, <span style="color:#008000">// TODO: Replace with the username you got from the last step
+</span><span style="color:#008000"></span>    pass: <span style="color:#a31515">&#34;2FEKaUyPSf5GAb8XEaiQgy7SY2ZEZQ4GVfTDtfRDqQYT&#34;</span> <span style="color:#008000">// TODO: Replace with the password you got from the last step
+</span><span style="color:#008000"></span>});
+<span style="color:#008000">// Import and initialize Multichain.
+</span><span style="color:#008000"></span>
+<span style="color:#00f">const</span> express = require(<span style="color:#a31515">&#39;express&#39;</span>)
+<span style="color:#008000">// Import the express package so you can use it.
+</span><span style="color:#008000"></span>
+<span style="color:#00f">const</span> app = express()
+<span style="color:#008000">// Initialize app as an express app.
+</span><span style="color:#008000"></span>
+<span style="color:#00f">const</span> port = 3000
+<span style="color:#008000">// Set port number.
+</span><span style="color:#008000"></span>
+app.get(<span style="color:#a31515">&#39;/&#39;</span>, (req, res) =&gt; res.send(<span style="color:#a31515">&#39;Hello World!&#39;</span>))
+<span style="color:#008000">// Create a REST API endpoint for a GET request 
+</span><span style="color:#008000">// that would return the string &#34;Hello World!&#34;.
+</span><span style="color:#008000"></span>
+app.get(<span style="color:#a31515">&#39;/multichain&#39;</span>, (req, res) =&gt; {
+    multichain.getInfo((err, info) =&gt; {
+        <span style="color:#00f">if</span>(err){
+            <span style="color:#00f">throw</span> err;
+        }
+        res.json(info);
+    })
+})
+<span style="color:#008000">// Create a REST API endpoint for a GET request 
+</span><span style="color:#008000">// that would return the information about the blockchain.
+</span><span style="color:#008000"></span>
+app.listen(port, () =&gt; 
+    console.log(<span style="color:#a31515">`Example app listening on port </span><span style="color:#a31515">${</span>port<span style="color:#a31515">}</span><span style="color:#a31515">!`</span>))
+<span style="color:#008000">// Start listening for requests on port 3000.
+</span></code></pre></div>
+<p>Now if open your browser and navigate to <em><a href="http://localhost:3000/multichain">http://localhost:3000/multichain</a></em></p>
+
+<p>Voila!!! you are done.</p>
 
     </div>
 </div>
 
 
-    
     
     
     

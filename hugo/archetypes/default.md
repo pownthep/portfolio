@@ -1,6 +1,10 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
+author: Pownthep Laokhunthot
+draft: false
+description: This post is about...
+tags: 
+    - typescript
 ---
 

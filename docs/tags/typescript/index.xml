@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>typescript on pownthep.io</title>
+    <link>https://pownthep.github.io/portfolio/tags/typescript/</link>
+    <description>Recent content in typescript on pownthep.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://pownthep.github.io/portfolio/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Content Management System with Firebase</title>
+      <link>https://pownthep.github.io/portfolio/posts/content-management-system-with-firebase/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://pownthep.github.io/portfolio/posts/content-management-system-with-firebase/</guid>
+      <description>Content Management System with Firebase This project was generated with Angular CLI version 7.3.8.
+Development server Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Code scaffolding Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.
+Build Run ng build to build the project. The build artifacts will be stored in the dist/ directory.</description>
+    </item>
+    
+  </channel>
+</rss>

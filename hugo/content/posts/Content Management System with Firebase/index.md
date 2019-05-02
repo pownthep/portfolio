@@ -2,6 +2,9 @@
 title: Content Management System with Firebase
 date: 2017-03-23
 publishdate: 2017-03-25
+description: This post is about...
+tags: 
+    - typescript
 ---
 # Content Management System with Firebase
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
