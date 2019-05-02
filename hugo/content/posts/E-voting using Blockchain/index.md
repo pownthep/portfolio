@@ -2,6 +2,7 @@
 title: E-voting using Blockchain
 date: 2019-05-01
 publishdate: 2019-03-01
+author: Pownthep Laokhunthot
 description: This post will show you how to create REST API endpoints using the Express framework on Node JS, set up a Blockchain for development purposes using Multichain, and get started on journey develop decentralized application.
 tags: 
     - javascript

@@ -1,11 +1,11 @@
 {{ define "description" }}
-<meta name="Description" content="List of posts">
+<meta name="Description" content="{{ .Title }}">
 {{ end }}
 {{ define "main" }}
 <main class="post-list">
     <article>
         <header>
-            {{.Content}}
+            <h1>{{ title .Title }}</h1>
         </header>
     </article>
     {{ range .Pages }}
@@ -14,7 +14,7 @@
                 <a href="{{.Permalink}}" aria-label="{{.Title}}"><b>{{.Title}}</b></a>
             </p>
             <p>
-                {{.Params.description}}
+                {{ .Params.description }}
             </p>
             <p>
                 Published: {{.Date.Format "2006-01-02"}} <br>
@@ -22,7 +22,7 @@
             </p>
             <p>
                 {{ range .Params.tags }}
-                    <a href="tags/{{ . }}" aria-label="{{ . }}" class="tags"><span>#{{ . }}</span></a>
+                    <a href="../{{ . }}" aria-label="{{ . }}" class="tags"><span>#{{ . }}</span></a>
                 {{ end }}
             </p>
         </div>

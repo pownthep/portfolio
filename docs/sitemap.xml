@@ -13,19 +13,12 @@
   </url>
   
   <url>
-    <loc>https://pownthep.github.io/portfolio/posts/</loc>
-    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pownthep.github.io/portfolio/tags/</loc>
-    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://pownthep.github.io/portfolio/tags/javascript/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pownthep.github.io/portfolio/posts/</loc>
     <lastmod>2019-05-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -43,8 +36,25 @@
   </url>
   
   <url>
+    <loc>https://pownthep.github.io/portfolio/tags/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://pownthep.github.io/portfolio/posts/flutter-app/</loc>
     <lastmod>2017-03-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pownthep.github.io/portfolio/tags/dart/</loc>
+    <lastmod>2017-03-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pownthep.github.io/portfolio/tags/flutter/</loc>
+    <lastmod>2017-03-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -56,6 +66,10 @@
     <loc>https://pownthep.github.io/portfolio/tags/typescript/</loc>
     <lastmod>2017-03-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pownthep.github.io/portfolio/tags/angular/</loc>
   </url>
   
   <url>

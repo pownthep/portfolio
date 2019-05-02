@@ -1,0 +1,16 @@
+{{ define "description" }}
+<meta name="Description" content="{{.Params.description}}">
+{{ end }}
+{{ define "main" }}
+<main class="post-list">
+    <header>
+        <h1>{{.Content}}</h1>
+        {{ if .Params }}
+        <p>{{.Params.description}}</p>
+        {{ end }}
+    </header>
+    {{ range .Pages }}
+        <a href="{{.Permalink | relURL }}"><span class="tags">#{{ anchorize .Title}}</span></a>
+    {{ end }}
+</main>
+{{ end }}

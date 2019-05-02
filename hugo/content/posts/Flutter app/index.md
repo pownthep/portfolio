@@ -2,6 +2,11 @@
 title: Flutter app
 date: 2017-03-26
 publishdate: 2017-03-26
+author: Pownthep Laokhunthot
+description: This post will show you how to create REST API endpoints using the Express framework on Node JS, set up a Blockchain for development purposes using Multichain, and get started on journey develop decentralized application.
+tags: 
+    - flutter
+    - dart
 ---
 # Software Design Document
 ## Jack of All Trades

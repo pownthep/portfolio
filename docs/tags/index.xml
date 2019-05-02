@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on pownthep.io</title>
+    <title>pownthep.io</title>
     <link>https://pownthep.github.io/portfolio/tags/</link>
-    <description>Recent content in Tags on pownthep.io</description>
+    <description>Recent content on pownthep.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 May 2019 00:00:00 +0000</lastBuildDate>
@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>javascript</title>
+      <title>Javascript</title>
       <link>https://pownthep.github.io/portfolio/tags/javascript/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
       
@@ -39,11 +39,38 @@
     </item>
     
     <item>
+      <title>dart</title>
+      <link>https://pownthep.github.io/portfolio/tags/dart/</link>
+      <pubDate>Sun, 26 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://pownthep.github.io/portfolio/tags/dart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flutter</title>
+      <link>https://pownthep.github.io/portfolio/tags/flutter/</link>
+      <pubDate>Sun, 26 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://pownthep.github.io/portfolio/tags/flutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>typescript</title>
       <link>https://pownthep.github.io/portfolio/tags/typescript/</link>
       <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://pownthep.github.io/portfolio/tags/typescript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Angular</title>
+      <link>https://pownthep.github.io/portfolio/tags/angular/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pownthep.github.io/portfolio/tags/angular/</guid>
       <description></description>
     </item>
     
