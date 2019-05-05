@@ -9,7 +9,6 @@ tags:
     - node
     - multichain
 ---
-{{< figure src="img/multichain.png" alt="Angular router animations demo" >}}
 
 ## This post will show you how to:
 - create REST API endpoints using the Express framework on Node JS

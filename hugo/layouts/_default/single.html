@@ -9,7 +9,12 @@
 {{ define "main" }}
 <div style="margin-top: 2%;" class="post-list">
     <div class="post animated fadeInDown">
-        <h1 style="text-align:center;">{{ .Title }}</h1>
+        <h1>{{ .Title }}</h1>
+        <p>
+            {{ range .Params.tags }}
+                <a href="../{{ . }}" aria-label="{{ . }}" class="tags"><span>#{{ . }}</span></a>
+            {{ end }}
+        </p>
         {{ .Content }}
     </div>
 </div>
