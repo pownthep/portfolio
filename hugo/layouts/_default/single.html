@@ -7,14 +7,12 @@
 {{ end }}
 
 {{ define "main" }}
-<div style="margin-top: 2%;" class="post-list">
-    <div class="post animated fadeInDown">
-        <h1>{{ .Title }}</h1>
-        <p>
-            {{ range .Params.tags }}
-                <a href="../{{ . }}" aria-label="{{ . }}" class="tags"><span>#{{ . }}</span></a>
-            {{ end }}
-        </p>
+<div class="content-page">
+    <aside class="toc">
+        <p style="text-align: center;">Table of Content</p>
+        {{ .TableOfContents }}
+    </aside>
+    <div class="content animated fadeInDown">
         {{ .Content }}
     </div>
 </div>

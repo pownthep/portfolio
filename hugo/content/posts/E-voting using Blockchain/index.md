@@ -9,8 +9,9 @@ tags:
     - node
     - multichain
 ---
+# E-voting using Blockchain
+## Goals
 
-## This post will show you how to:
 - create REST API endpoints using the Express framework on Node JS
 - set up a Blockchain for development purposes using Multichain
 - get started on journey develop decentralized application

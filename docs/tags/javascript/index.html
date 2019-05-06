@@ -18,6 +18,7 @@
         font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
         color: #001F3F;
         margin: 0px;
+        scroll-behavior: smooth;
     }
     
     a {
@@ -37,6 +38,7 @@
         text-align: right;
         padding: 20px;
         border: 1px solid #dae1e7;
+        max-height: 6vh;
     }
 
     .icons {
@@ -51,6 +53,37 @@
     .post-list{
         padding-left: 20%; 
         padding-right: 20%;
+    }
+
+    .content-page {
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-gap: 1px;
+    }
+    .content {
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 89vh;
+        overflow: auto;
+    }
+    .toc {
+        border-right: 1px solid #dae1e7;
+        font-size: 14pt;
+        padding-left: 15px;
+        height: 89vh;
+        overflow: auto;
+    }
+    .toc ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+    .toc li {
+        margin-bottom: 23px;
+        margin-top: 23px;
+    }
+    .toc li a:hover {
+        text-decoration: underline;
+        text-decoration-color: #001F3F;
     }
     .post {
         border-radius: 2px;
@@ -67,7 +100,7 @@
         word-break: break-all;
         overflow: auto;
         border: 1px solid #dae1e7;
-        border-radius: 5px;
+        border-radius: 2px;
     }
     code {
         font-family: Consolas;
@@ -88,6 +121,18 @@
     }
 
     @media only screen and (max-width: 768px) {
+        .toc {
+            display: none;
+        }
+        .content-page {
+            display: block;
+        }
+        .content { 
+            padding-left: 1%; 
+            padding-right: 1%;
+            word-break: break-word;
+            font-size: 10pt;
+        }
         .post-list {
             padding-left: 1%; 
             padding-right: 1%;

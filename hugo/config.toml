@@ -2,5 +2,5 @@ baseURL = "https://pownthep.github.io/portfolio/"
 languageCode = "en-us"
 title = "pownthep.io"
 publishDir = "../docs"
-PygmentsStyle = "vs"
+PygmentsStyle = "monokai"
 PygmentsCodeFences = true

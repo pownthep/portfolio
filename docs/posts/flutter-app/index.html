@@ -18,6 +18,7 @@ Flutter app &ndash; pownthep.io
         font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
         color: #001F3F;
         margin: 0px;
+        scroll-behavior: smooth;
     }
     
     a {
@@ -37,6 +38,7 @@ Flutter app &ndash; pownthep.io
         text-align: right;
         padding: 20px;
         border: 1px solid #dae1e7;
+        max-height: 6vh;
     }
 
     .icons {
@@ -51,6 +53,37 @@ Flutter app &ndash; pownthep.io
     .post-list{
         padding-left: 20%; 
         padding-right: 20%;
+    }
+
+    .content-page {
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-gap: 1px;
+    }
+    .content {
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 89vh;
+        overflow: auto;
+    }
+    .toc {
+        border-right: 1px solid #dae1e7;
+        font-size: 14pt;
+        padding-left: 15px;
+        height: 89vh;
+        overflow: auto;
+    }
+    .toc ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+    .toc li {
+        margin-bottom: 23px;
+        margin-top: 23px;
+    }
+    .toc li a:hover {
+        text-decoration: underline;
+        text-decoration-color: #001F3F;
     }
     .post {
         border-radius: 2px;
@@ -67,7 +100,7 @@ Flutter app &ndash; pownthep.io
         word-break: break-all;
         overflow: auto;
         border: 1px solid #dae1e7;
-        border-radius: 5px;
+        border-radius: 2px;
     }
     code {
         font-family: Consolas;
@@ -88,6 +121,18 @@ Flutter app &ndash; pownthep.io
     }
 
     @media only screen and (max-width: 768px) {
+        .toc {
+            display: none;
+        }
+        .content-page {
+            display: block;
+        }
+        .content { 
+            padding-left: 1%; 
+            padding-right: 1%;
+            word-break: break-word;
+            font-size: 10pt;
+        }
         .post-list {
             padding-left: 1%; 
             padding-right: 1%;
@@ -184,16 +229,45 @@ Flutter app &ndash; pownthep.io
 
     
     
-<div style="margin-top: 2%;" class="post-list">
-    <div class="post animated fadeInDown">
-        <h1>Flutter app</h1>
-        <p>
-            
-                <a href="../flutter" aria-label="flutter" class="tags"><span>#flutter</span></a>
-            
-                <a href="../dart" aria-label="dart" class="tags"><span>#dart</span></a>
-            
-        </p>
+<div class="content-page">
+    <aside class="toc">
+        <p style="text-align: center;">Table of Content</p>
+        <nav id="TableOfContents">
+<ul>
+<li><a href="#software-design-document">Software Design Document</a>
+<ul>
+<li><a href="#jack-of-all-trades">Jack of All Trades</a></li>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#context">Context</a></li>
+<li><a href="#goals-and-non-goals">Goals and Non-Goals</a></li>
+<li><a href="#milestones-daily-update-so-will-be-subjected-to-change">Milestones (Daily update so will be subjected to change)</a>
+<ul>
+<li><a href="#start-date-24-of-april-2019">Start Date: 24 of April 2019</a></li>
+</ul></li>
+<li><a href="#existing-solution">Existing Solution</a>
+<ul>
+<li><a href="#this-application-provides-five-main-services">This application provides five main services:</a></li>
+<li><a href="#indeed-provide-the-following-services">Indeed provide the following services:</a></li>
+<li><a href="#job-applicant-can">Job applicant can:</a></li>
+</ul></li>
+<li><a href="#proposed-solution">Proposed Solution</a>
+<ul>
+<li><a href="#the-before-job-process-is-as-follows">The before job process is as follows:</a></li>
+<li><a href="#during-job-process">During job process:</a></li>
+<li><a href="#after-job-process">After job process:</a></li>
+<li><a href="#technical-implementation-will-require">Technical implementation will require:</a></li>
+<li><a href="#core-features">Core features</a></li>
+</ul></li>
+<li><a href="#alternative-solutions">Alternative Solutions</a></li>
+<li><a href="#testability-monitoring-and-alerting">Testability, Monitoring and Alerting</a></li>
+<li><a href="#cross-team-impact">Cross-Team Impact</a></li>
+<li><a href="#open-questions">Open Questions</a></li>
+<li><a href="#detailed-scoping-and-timeline">Detailed Scoping and Timeline</a></li>
+</ul></li>
+</ul>
+</nav>
+    </aside>
+    <div class="content animated fadeInDown">
         
 
 <h1 id="software-design-document">Software Design Document</h1>
