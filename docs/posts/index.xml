@@ -12,23 +12,26 @@
     
     
     <item>
-      <title>E-voting using Blockchain</title>
-      <link>https://pownthep.github.io/portfolio/posts/e-voting-using-blockchain/</link>
+      <title>Blockchain with NodeJS</title>
+      <link>https://pownthep.github.io/portfolio/posts/blockchain-with-node-js/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://pownthep.github.io/portfolio/posts/e-voting-using-blockchain/</guid>
-      <description>E-voting using Blockchain Goals  create REST API endpoints using the Express framework on Node JS set up a Blockchain for development purposes using Multichain get started on journey develop decentralized application  Requirements  A local computer  Install Node JS Download and install Node JS from their official website: https://nodejs.org/en/.
+      <guid>https://pownthep.github.io/portfolio/posts/blockchain-with-node-js/</guid>
+      <description>Blockchain with NodeJS Goals  Create REST API endpoints using the Express framework on Node JS Set up a Blockchain for development purposes using Multichain Get started on journey develop decentralized application  Requirements  A local computer  Install Node JS Download and install Node JS from their official website: https://nodejs.org/en/.
 Create an Express application Express is a javascript backend framework for building REST API endpoints.
 Install Express Open Terminal (macOS) or Command Prompt (Windows).</description>
     </item>
     
     <item>
-      <title>Flutter app</title>
-      <link>https://pownthep.github.io/portfolio/posts/flutter-app/</link>
+      <title>Errandy Flutter Application</title>
+      <link>https://pownthep.github.io/portfolio/posts/errandy-flutter-application/</link>
       <pubDate>Sun, 26 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://pownthep.github.io/portfolio/posts/flutter-app/</guid>
-      <description>Software Design Document Jack of All Trades Author: Pownthep Laokhunthot Reviewer: Pownthep Laokhunthot Created date: 24 of April 2019
+      <guid>https://pownthep.github.io/portfolio/posts/errandy-flutter-application/</guid>
+      <description>Software Design Document Title: Errandy
+Author: Pownthep Laokhunthot
+Reviewer:Pownthep Laokhunthot
+Created date: 24 of April 2019
 Overview A mobile application that will allow employer to post jobs and find workers around local areas on demand. The application will also provide contact details to the worker and as well as direction to get to the work site as specified by the employer.
 Context Young people in modern society often find themselves with nothing to do outside of studying and going out with friends.</description>
     </item>
@@ -39,10 +42,7 @@ Context Young people in modern society often find themselves with nothing to do 
       <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://pownthep.github.io/portfolio/posts/content-management-system-with-firebase/</guid>
-      <description>Content Management System with Firebase This project was generated with Angular CLI version 7.3.8.
-Development server Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-Code scaffolding Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.
-Build Run ng build to build the project. The build artifacts will be stored in the dist/ directory.</description>
+      <description></description>
     </item>
     
   </channel>

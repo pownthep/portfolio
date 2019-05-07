@@ -1,5 +1,5 @@
 ---
-title: E-voting using Blockchain
+title: Blockchain with NodeJS
 date: 2019-05-01
 publishdate: 2019-03-01
 author: Pownthep Laokhunthot
@@ -9,12 +9,12 @@ tags:
     - node
     - multichain
 ---
-# E-voting using Blockchain
+# Blockchain with NodeJS
 ## Goals
 
-- create REST API endpoints using the Express framework on Node JS
-- set up a Blockchain for development purposes using Multichain
-- get started on journey develop decentralized application
+1. Create REST API endpoints using the Express framework on Node JS
+2. Set up a Blockchain for development purposes using Multichain
+3. Get started on journey develop decentralized application
 
 ## Requirements
 - A local computer
@@ -51,7 +51,6 @@ This command tells NPM (Node Package Manager) to `install` Express and `--save` 
 touch index.js
 ```
 This will create an `index.js` file.
-***
 
 ### Create index.js file
 Now open `index.js` in any code editor of your choice (VS Code).

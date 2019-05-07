@@ -6,7 +6,7 @@
     <link rel="icon" href="https://pownthep.github.io/portfolio/">
     <link rel="icon" type="image/png" sizes="32x32" href="https://pownthep.github.io/portfolio/icons/favicon-32x32.png">
     <title>
-E-voting using Blockchain &ndash; pownthep.io
+Blockchain with NodeJS &ndash; pownthep.io
 </title>
 
     
@@ -15,7 +15,7 @@ E-voting using Blockchain &ndash; pownthep.io
 
     <style>
     html, body {
-        font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
+        font-family: Helvetica, Arial, sans-serif, Times;
         color: #001F3F;
         margin: 0px;
         scroll-behavior: smooth;
@@ -48,7 +48,7 @@ E-voting using Blockchain &ndash; pownthep.io
     }
 
     .logo {
-        width: 150px; height: 60px;
+        width: 140px; height: 60px;
     }
     .post-list{
         padding-left: 20%; 
@@ -92,9 +92,6 @@ E-voting using Blockchain &ndash; pownthep.io
         padding-left: 22px;
         padding-right: 22px;
     }
-    .post:hover {
-        border: 1px solid #001F3F;
-    }
     pre {
         padding: 5px;
         word-break: break-all;
@@ -115,6 +112,7 @@ E-voting using Blockchain &ndash; pownthep.io
         background-color: #dae1e7;
         border-radius: 2px;
         padding: 5px;
+        margin-bottom: 10px;
     }
     a:link {
         color: #001F3F;
@@ -234,7 +232,7 @@ E-voting using Blockchain &ndash; pownthep.io
         <p style="text-align: center;">Table of Content</p>
         <nav id="TableOfContents">
 <ul>
-<li><a href="#e-voting-using-blockchain">E-voting using Blockchain</a>
+<li><a href="#blockchain-with-nodejs">Blockchain with NodeJS</a>
 <ul>
 <li><a href="#goals">Goals</a></li>
 <li><a href="#requirements">Requirements</a></li>
@@ -266,15 +264,15 @@ E-voting using Blockchain &ndash; pownthep.io
     <div class="content animated fadeInDown">
         
 
-<h1 id="e-voting-using-blockchain">E-voting using Blockchain</h1>
+<h1 id="blockchain-with-nodejs">Blockchain with NodeJS</h1>
 
 <h2 id="goals">Goals</h2>
 
-<ul>
-<li>create REST API endpoints using the Express framework on Node JS</li>
-<li>set up a Blockchain for development purposes using Multichain</li>
-<li>get started on journey develop decentralized application</li>
-</ul>
+<ol>
+<li>Create REST API endpoints using the Express framework on Node JS</li>
+<li>Set up a Blockchain for development purposes using Multichain</li>
+<li>Get started on journey develop decentralized application</li>
+</ol>
 
 <h2 id="requirements">Requirements</h2>
 
@@ -293,44 +291,42 @@ E-voting using Blockchain &ndash; pownthep.io
 <h3 id="install-express">Install Express</h3>
 
 <p>Open Terminal (macOS) or Command Prompt (Windows). <br></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd Desktop</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd Desktop</code></pre></div>
 <p>This command navigates you inside the Desktop folder.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir express</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir express</code></pre></div>
 <p>This command creates a folder named &ldquo;express&rdquo;.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd express</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd express</code></pre></div>
 <p>This command navigates into the &ldquo;express&rdquo; folder.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm init -y </code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm init -y </code></pre></div>
 <p>This command creates a <code>package.json</code> file which contains meta data about your project and what packages your project uses.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install express --save</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install express --save</code></pre></div>
 <p>This command tells NPM (Node Package Manager) to <code>install</code> Express and <code>--save</code> updates the <code>package.json</code> to include Express as a project dependency.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">touch index.js</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">touch index.js</code></pre></div>
 <p>This will create an <code>index.js</code> file.</p>
-
-<hr />
 
 <h3 id="create-index-js-file">Create index.js file</h3>
 
 <p>Now open <code>index.js</code> in any code editor of your choice (VS Code).
 Copy and paste the following code.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>)
-<span style="color:#75715e">// Import the express package so you can use it.
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>()
-<span style="color:#75715e">// Initialize app as an express app.
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">port</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3000</span>
-<span style="color:#75715e">// Set port number.
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#39;Hello World!&#39;</span>))
-<span style="color:#75715e">// Create a REST API endpoint for a GET request 
-</span><span style="color:#75715e">// that would return the string &#34;Hello World!&#34;.
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">port</span>, () =&gt; 
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Example app listening on port </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">port</span><span style="color:#e6db74">}</span><span style="color:#e6db74">!`</span>))
-<span style="color:#75715e">// Start listening for requests on port 3000.
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">const</span> express = require(<span style="color:#a31515">&#39;express&#39;</span>)
+<span style="color:#008000">// Import the express package so you can use it.
+</span><span style="color:#008000"></span>
+<span style="color:#00f">const</span> app = express()
+<span style="color:#008000">// Initialize app as an express app.
+</span><span style="color:#008000"></span>
+<span style="color:#00f">const</span> port = 3000
+<span style="color:#008000">// Set port number.
+</span><span style="color:#008000"></span>
+app.get(<span style="color:#a31515">&#39;/&#39;</span>, (req, res) =&gt; res.send(<span style="color:#a31515">&#39;Hello World!&#39;</span>))
+<span style="color:#008000">// Create a REST API endpoint for a GET request 
+</span><span style="color:#008000">// that would return the string &#34;Hello World!&#34;.
+</span><span style="color:#008000"></span>
+app.listen(port, () =&gt; 
+    console.log(<span style="color:#a31515">`Example app listening on port </span><span style="color:#a31515">${</span>port<span style="color:#a31515">}</span><span style="color:#a31515">!`</span>))
+<span style="color:#008000">// Start listening for requests on port 3000.
 </span></code></pre></div>
 <p>On your Terminal or Command Prompt.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">node index.js</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">node index.js</code></pre></div>
 <p>Now open a browser and type in.</p>
 
 <pre><code>http://localhost:3000
@@ -356,13 +352,13 @@ Copy and paste the following code.</p>
 <li>Extract the multichain-windows-2.0.1.zip.</li>
 <li>Open Command Prompt.</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd multichain-windows-2.0.1</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd multichain-windows-2.0.1</code></pre></div>
 <p>Navigate into multichain folder.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">multichain-util create chain1</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">multichain-util create chain1</code></pre></div>
 <p>This command create a Multichain configuration file that will be use when we start the Blockchain. <strong><em>&lsquo;chain1&rsquo;</em></strong> is the name of the Blockchain.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">multichaind chain1 -daemon</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">multichaind chain1 -daemon</code></pre></div>
 <p>This command starts the <strong><em>&lsquo;chain1&rsquo;</em></strong> Blockchain. It should show something like this. <strong><em>Note that the IP and port number be different for you.</em></strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">MultiChain 2.0.1 Daemon (Community Edition, latest protocol 20009)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">MultiChain 2.0.1 Daemon (Community Edition, latest protocol 20009)
 
 Looking for genesis block...
 Genesis block found
@@ -396,7 +392,7 @@ Node ready.</code></pre></div>
 <p>The password is randomly generated when we run <code>multichaind chain1 -daemon</code>, so we need to look at the <strong><em>multichain.conf</em></strong> file.</p>
 
 <p>You can find the file in <strong><em>&ldquo;User/YOURUSERNAME/Roaming/Multichain/chain1/multichain.conf&rdquo;</em></strong>. Replace <em>YOURUSERNAME</em> with your own username.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">rpcuser=multichainrpc
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">rpcuser=multichainrpc
 rpcpassword=2FEKaUyPSf5GAb8XEaiQgy7SY2ZEZQ4GVfTDtfRDqQYT</code></pre></div>
 <p>So in my case, the username is <em>&ldquo;multichainrpc&rdquo;</em> and the password is <em>&ldquo;2FEKaUyPSf5GAb8XEaiQgy7SY2ZEZQ4GVfTDtfRDqQYT&rdquo;</em></p>
 
@@ -416,41 +412,41 @@ rpcpassword=2FEKaUyPSf5GAb8XEaiQgy7SY2ZEZQ4GVfTDtfRDqQYT</code></pre></div>
 <li>Run <code>npm install multichain-node --save</code></li>
 <li>Open <em>index.js</em> and paste the following code</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">multichain</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;multichain-node&#34;</span>)({
-    <span style="color:#a6e22e">port</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">6736</span>, <span style="color:#75715e">// TODO: Replace with the port you got from the last step
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">host</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;127.0.0.1&#39;</span>,
-    <span style="color:#a6e22e">user</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;multichainrpc&#34;</span>, <span style="color:#75715e">// TODO: Replace with the username you got from the last step
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">pass</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;2FEKaUyPSf5GAb8XEaiQgy7SY2ZEZQ4GVfTDtfRDqQYT&#34;</span> <span style="color:#75715e">// TODO: Replace with the password you got from the last step
-</span><span style="color:#75715e"></span>});
-<span style="color:#75715e">// Import and initialize Multichain.
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>)
-<span style="color:#75715e">// Import the express package so you can use it.
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>()
-<span style="color:#75715e">// Initialize app as an express app.
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">port</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3000</span>
-<span style="color:#75715e">// Set port number.
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#39;Hello World!&#39;</span>))
-<span style="color:#75715e">// Create a REST API endpoint for a GET request 
-</span><span style="color:#75715e">// that would return the string &#34;Hello World!&#34;.
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/multichain&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
-    <span style="color:#a6e22e">multichain</span>.<span style="color:#a6e22e">getInfo</span>((<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">info</span>) =&gt; {
-        <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">err</span>){
-            <span style="color:#66d9ef">throw</span> <span style="color:#a6e22e">err</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">let</span> multichain = require(<span style="color:#a31515">&#34;multichain-node&#34;</span>)({
+    port: 6736, <span style="color:#008000">// TODO: Replace with the port you got from the last step
+</span><span style="color:#008000"></span>    host: <span style="color:#a31515">&#39;127.0.0.1&#39;</span>,
+    user: <span style="color:#a31515">&#34;multichainrpc&#34;</span>, <span style="color:#008000">// TODO: Replace with the username you got from the last step
+</span><span style="color:#008000"></span>    pass: <span style="color:#a31515">&#34;2FEKaUyPSf5GAb8XEaiQgy7SY2ZEZQ4GVfTDtfRDqQYT&#34;</span> <span style="color:#008000">// TODO: Replace with the password you got from the last step
+</span><span style="color:#008000"></span>});
+<span style="color:#008000">// Import and initialize Multichain.
+</span><span style="color:#008000"></span>
+<span style="color:#00f">const</span> express = require(<span style="color:#a31515">&#39;express&#39;</span>)
+<span style="color:#008000">// Import the express package so you can use it.
+</span><span style="color:#008000"></span>
+<span style="color:#00f">const</span> app = express()
+<span style="color:#008000">// Initialize app as an express app.
+</span><span style="color:#008000"></span>
+<span style="color:#00f">const</span> port = 3000
+<span style="color:#008000">// Set port number.
+</span><span style="color:#008000"></span>
+app.get(<span style="color:#a31515">&#39;/&#39;</span>, (req, res) =&gt; res.send(<span style="color:#a31515">&#39;Hello World!&#39;</span>))
+<span style="color:#008000">// Create a REST API endpoint for a GET request 
+</span><span style="color:#008000">// that would return the string &#34;Hello World!&#34;.
+</span><span style="color:#008000"></span>
+app.get(<span style="color:#a31515">&#39;/multichain&#39;</span>, (req, res) =&gt; {
+    multichain.getInfo((err, info) =&gt; {
+        <span style="color:#00f">if</span>(err){
+            <span style="color:#00f">throw</span> err;
         }
-        <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">json</span>(<span style="color:#a6e22e">info</span>);
+        res.json(info);
     })
 })
-<span style="color:#75715e">// Create a REST API endpoint for a GET request 
-</span><span style="color:#75715e">// that would return the information about the blockchain.
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">port</span>, () =&gt; 
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Example app listening on port </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">port</span><span style="color:#e6db74">}</span><span style="color:#e6db74">!`</span>))
-<span style="color:#75715e">// Start listening for requests on port 3000.
+<span style="color:#008000">// Create a REST API endpoint for a GET request 
+</span><span style="color:#008000">// that would return the information about the blockchain.
+</span><span style="color:#008000"></span>
+app.listen(port, () =&gt; 
+    console.log(<span style="color:#a31515">`Example app listening on port </span><span style="color:#a31515">${</span>port<span style="color:#a31515">}</span><span style="color:#a31515">!`</span>))
+<span style="color:#008000">// Start listening for requests on port 3000.
 </span></code></pre></div>
 <p>Now if open your browser and navigate to <em><a href="http://localhost:3000/multichain">http://localhost:3000/multichain</a></em></p>
 

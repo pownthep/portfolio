@@ -16,7 +16,7 @@
 
     <style>
     html, body {
-        font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
+        font-family: Helvetica, Arial, sans-serif, Times;
         color: #001F3F;
         margin: 0px;
         scroll-behavior: smooth;
@@ -49,7 +49,7 @@
     }
 
     .logo {
-        width: 150px; height: 60px;
+        width: 140px; height: 60px;
     }
     .post-list{
         padding-left: 20%; 
@@ -93,9 +93,6 @@
         padding-left: 22px;
         padding-right: 22px;
     }
-    .post:hover {
-        border: 1px solid #001F3F;
-    }
     pre {
         padding: 5px;
         word-break: break-all;
@@ -116,6 +113,7 @@
         background-color: #dae1e7;
         border-radius: 2px;
         padding: 5px;
+        margin-bottom: 10px;
     }
     a:link {
         color: #001F3F;
@@ -232,17 +230,20 @@
     
 <main class="post-list">
     <article>
-        <header>
+        <header style="display:inline-block;">
             
 
 <h2 id="recent-posts">Recent posts</h2>
 
         </header>
+        <a href="tags" style="display:inline-block; float: left; margin-top: 31px;">
+            <svg class="icons" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tags" class="svg-inline--fa fa-tags fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></svg>
+        </a>
     </article>
     
         <div class="post animated fadeInDown">
             <p>
-                <a href="https://pownthep.github.io/portfolio/posts/e-voting-using-blockchain/" aria-label="E-voting using Blockchain"><b>E-voting using Blockchain</b></a>
+                <a href="https://pownthep.github.io/portfolio/posts/blockchain-with-node-js/" aria-label="Blockchain with NodeJS"><b>Blockchain with NodeJS</b></a>
             </p>
             <p>
                 This post will show you how to create REST API endpoints using the Express framework on Node JS, set up a Blockchain for development purposes using Multichain, and get started on journey develop decentralized application.
@@ -253,21 +254,21 @@
             </p>
             <p>
                 
-                    <a href="tags/javascript" aria-label="javascript" class="tags"><span>#javascript</span></a>
+                    <span class="tags">#javascript</span>
                 
-                    <a href="tags/node" aria-label="node" class="tags"><span>#node</span></a>
+                    <span class="tags">#node</span>
                 
-                    <a href="tags/multichain" aria-label="multichain" class="tags"><span>#multichain</span></a>
+                    <span class="tags">#multichain</span>
                 
             </p>
         </div>
     
         <div class="post animated fadeInDown">
             <p>
-                <a href="https://pownthep.github.io/portfolio/posts/flutter-app/" aria-label="Flutter app"><b>Flutter app</b></a>
+                <a href="https://pownthep.github.io/portfolio/posts/errandy-flutter-application/" aria-label="Errandy Flutter Application"><b>Errandy Flutter Application</b></a>
             </p>
             <p>
-                This post will show you how to create REST API endpoints using the Express framework on Node JS, set up a Blockchain for development purposes using Multichain, and get started on journey develop decentralized application.
+                Software Design Document for a Flutter application &#39;Errandy&#39;.
             </p>
             <p>
                 Published: 2017-03-26 <br>
@@ -275,9 +276,9 @@
             </p>
             <p>
                 
-                    <a href="tags/flutter" aria-label="flutter" class="tags"><span>#flutter</span></a>
+                    <span class="tags">#flutter</span>
                 
-                    <a href="tags/dart" aria-label="dart" class="tags"><span>#dart</span></a>
+                    <span class="tags">#dart</span>
                 
             </p>
         </div>
@@ -295,7 +296,11 @@
             </p>
             <p>
                 
-                    <a href="tags/typescript" aria-label="typescript" class="tags"><span>#typescript</span></a>
+                    <span class="tags">#typescript</span>
+                
+                    <span class="tags">#firebase</span>
+                
+                    <span class="tags">#cms</span>
                 
             </p>
         </div>

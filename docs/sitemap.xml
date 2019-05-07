@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://pownthep.github.io/portfolio/</loc>
+    <loc>https://pownthep.github.io/portfolio/posts/blockchain-with-node-js/</loc>
     <lastmod>2019-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pownthep.github.io/portfolio/posts/e-voting-using-blockchain/</loc>
+    <loc>https://pownthep.github.io/portfolio/</loc>
     <lastmod>2019-05-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -41,7 +41,7 @@
   </url>
   
   <url>
-    <loc>https://pownthep.github.io/portfolio/posts/flutter-app/</loc>
+    <loc>https://pownthep.github.io/portfolio/posts/errandy-flutter-application/</loc>
     <lastmod>2017-03-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -60,6 +60,18 @@
   <url>
     <loc>https://pownthep.github.io/portfolio/posts/content-management-system-with-firebase/</loc>
     <lastmod>2017-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pownthep.github.io/portfolio/tags/cms/</loc>
+    <lastmod>2017-03-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pownthep.github.io/portfolio/tags/firebase/</loc>
+    <lastmod>2017-03-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>

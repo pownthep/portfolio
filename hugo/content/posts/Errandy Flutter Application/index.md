@@ -1,18 +1,22 @@
 ---
-title: Flutter app
+title: Errandy Flutter Application
 date: 2017-03-26
 publishdate: 2017-03-26
 author: Pownthep Laokhunthot
-description: This post will show you how to create REST API endpoints using the Express framework on Node JS, set up a Blockchain for development purposes using Multichain, and get started on journey develop decentralized application.
+description: Software Design Document for a Flutter application 'Errandy'.
 tags: 
     - flutter
     - dart
 ---
 # Software Design Document
-## Jack of All Trades
-Author: Pownthep Laokhunthot
-Reviewer: Pownthep Laokhunthot
-Created date: 24 of April 2019
+
+**Title:** Errandy
+
+**Author:** Pownthep Laokhunthot
+
+**Reviewer:**Pownthep Laokhunthot
+
+**Created date:** 24 of April 2019
 
 ## Overview
 A mobile application that will allow employer to post jobs and find workers around local areas on demand. The application will also provide contact details to the worker and as well as direction to get to the work site as specified by the employer. 
@@ -25,7 +29,9 @@ Young people in modern society often find themselves with nothing to do outside 
 - Worker (students or freelancer) will be able to make small income on the side on their free time.
 
 ## Milestones (Daily update so will be subjected to change)
-### Start Date: 24 of April 2019
+Start Date: 24 of April 2019
+
+
 - Milestone 1 - Mock up user interface: 25 of April 2019
 - Milestone 2 - Scaffold user interface: 26 of April 2019
 - Milestone 3 - Implement user registration 27 of April 2019
@@ -42,8 +48,9 @@ This is a platform for connecting individuals looking for household services wit
 This application is similar in that it allows handyman businesses to advertise their services on the app.
 
 
-LINE MAN (https://play.google.com/store/apps/details?id=com.linecorp.linemanth&hl=th) 
-### This application provides five main services:
+**LINE MAN** (https://play.google.com/store/apps/details?id=com.linecorp.linemanth&hl=th) 
+This application provides five main services:
+
 - On demand food delivery
 - On demand transport
 - On demand package delivery
@@ -51,8 +58,9 @@ LINE MAN (https://play.google.com/store/apps/details?id=com.linecorp.linemanth&h
 - On demand grocery shopping
 - Fast response time.
 
-Grab (https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&hl=en)
+**Grab** (https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&hl=en)
 - This application is similar to LINE MAN but offers it at a much cheaper price. The delivery fee can go as low as 10 Baht. Their services include:
+
 - On demand food delivery
 - On demand transport
 - On demand package delivery
@@ -60,13 +68,16 @@ Grab (https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&hl=en
 - On demand grocery shopping
 - Fast response time
 
-Indeed Job Search (https://play.google.com/store/apps/details?id=com.indeed.android.jobsearch&hl=en)
-### Indeed provide the following services:
-- Employers can:
+**Indeed Job Search** (https://play.google.com/store/apps/details?id=com.indeed.android.jobsearch&hl=en)
+Indeed provide the following services:
+
+Employers can:
+
 - Post job
 - Respond to job applicants
 
-### Job applicant can:
+Job applicant can:
+
 - Upload a resume/cv
 - Submit job application
 - Track job status
@@ -74,7 +85,8 @@ Indeed Job Search (https://play.google.com/store/apps/details?id=com.indeed.andr
 ## Proposed Solution
 A platform that allows employers and employee to connect and negotiate directly. 
 
-### The before job process is as follows:
+**The before job process is as follows:**
+
 - An employer post a job specifying the category, the requirements or qualification, the pay, the estimated workhour, the location, the date and time and the search area. 
 - A job that is posted will be updated to every user in realtime.
 - Job applicant can apply for any job.
@@ -85,18 +97,21 @@ A platform that allows employers and employee to connect and negotiate directly.
 - After an applicant was chosen by the employer, the applicant will be ask to accept the job again as confirmation.
 - *Extra feature - change job status to doing
 
-### During job process:
+**During job process:**
 - User at this stage will have access to realtime location tracking and direction to the job site as specified by the employer.
 
-### After job process:
+**After job process:**
+
 - User will be to review their employer and employee. The review score of each user which will be publicly visable to other users. 
 - *Extra feature - change job status to doing
 
-### Technical implementation will require:
+**Technical implementation will require:**
+
 - Database with realtime update capabilities
 - Mobile SDK that provides basic UI components and access to Geolocation API
 
-### Core features
+**Core features**
+
 - Authentication
 - Job search
 - Job posting
@@ -116,5 +131,6 @@ A platform that allows employers and employee to connect and negotiate directly.
 - What is the user registration process?
 
 ## Detailed Scoping and Timeline
-Timeline: 24 of April until 24 of May 2019
-Scope: Implement core features as listed in proposed solution section.
+**Timeline:** 24 of April until 24 of May 2019
+
+**Scope:** Implement core features as listed in proposed solution section.

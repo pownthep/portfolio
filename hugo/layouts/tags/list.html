@@ -10,7 +10,7 @@
         {{ end }}
     </header>
     {{ range .Pages }}
-        <a href="{{.Permalink | relURL }}"><span class="tags">#{{ anchorize .Title}}</span></a>
+        <a href="{{.Permalink | relURL }}" class="tags"><span>#{{ anchorize .Title}}</span></a>
     {{ end }}
 </main>
 {{ end }}

@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>E-voting using Blockchain</title>
-      <link>https://pownthep.github.io/portfolio/posts/e-voting-using-blockchain/</link>
+      <title>Blockchain with NodeJS</title>
+      <link>https://pownthep.github.io/portfolio/posts/blockchain-with-node-js/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://pownthep.github.io/portfolio/posts/e-voting-using-blockchain/</guid>
-      <description>E-voting using Blockchain Goals  create REST API endpoints using the Express framework on Node JS set up a Blockchain for development purposes using Multichain get started on journey develop decentralized application  Requirements  A local computer  Install Node JS Download and install Node JS from their official website: https://nodejs.org/en/.
+      <guid>https://pownthep.github.io/portfolio/posts/blockchain-with-node-js/</guid>
+      <description>Blockchain with NodeJS Goals  Create REST API endpoints using the Express framework on Node JS Set up a Blockchain for development purposes using Multichain Get started on journey develop decentralized application  Requirements  A local computer  Install Node JS Download and install Node JS from their official website: https://nodejs.org/en/.
 Create an Express application Express is a javascript backend framework for building REST API endpoints.
 Install Express Open Terminal (macOS) or Command Prompt (Windows).</description>
     </item>

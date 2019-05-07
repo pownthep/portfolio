@@ -6,16 +6,16 @@
     <link rel="icon" href="https://pownthep.github.io/portfolio/">
     <link rel="icon" type="image/png" sizes="32x32" href="https://pownthep.github.io/portfolio/icons/favicon-32x32.png">
     <title>
-Flutter app &ndash; pownthep.io
+Errandy Flutter Application &ndash; pownthep.io
 </title>
 
     
-<meta name="Description" content="This post will show you how to create REST API endpoints using the Express framework on Node JS, set up a Blockchain for development purposes using Multichain, and get started on journey develop decentralized application.">
+<meta name="Description" content="Software Design Document for a Flutter application &#39;Errandy&#39;.">
 
 
     <style>
     html, body {
-        font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
+        font-family: Helvetica, Arial, sans-serif, Times;
         color: #001F3F;
         margin: 0px;
         scroll-behavior: smooth;
@@ -48,7 +48,7 @@ Flutter app &ndash; pownthep.io
     }
 
     .logo {
-        width: 150px; height: 60px;
+        width: 140px; height: 60px;
     }
     .post-list{
         padding-left: 20%; 
@@ -92,9 +92,6 @@ Flutter app &ndash; pownthep.io
         padding-left: 22px;
         padding-right: 22px;
     }
-    .post:hover {
-        border: 1px solid #001F3F;
-    }
     pre {
         padding: 5px;
         word-break: break-all;
@@ -115,6 +112,7 @@ Flutter app &ndash; pownthep.io
         background-color: #dae1e7;
         border-radius: 2px;
         padding: 5px;
+        margin-bottom: 10px;
     }
     a:link {
         color: #001F3F;
@@ -236,28 +234,12 @@ Flutter app &ndash; pownthep.io
 <ul>
 <li><a href="#software-design-document">Software Design Document</a>
 <ul>
-<li><a href="#jack-of-all-trades">Jack of All Trades</a></li>
 <li><a href="#overview">Overview</a></li>
 <li><a href="#context">Context</a></li>
 <li><a href="#goals-and-non-goals">Goals and Non-Goals</a></li>
-<li><a href="#milestones-daily-update-so-will-be-subjected-to-change">Milestones (Daily update so will be subjected to change)</a>
-<ul>
-<li><a href="#start-date-24-of-april-2019">Start Date: 24 of April 2019</a></li>
-</ul></li>
-<li><a href="#existing-solution">Existing Solution</a>
-<ul>
-<li><a href="#this-application-provides-five-main-services">This application provides five main services:</a></li>
-<li><a href="#indeed-provide-the-following-services">Indeed provide the following services:</a></li>
-<li><a href="#job-applicant-can">Job applicant can:</a></li>
-</ul></li>
-<li><a href="#proposed-solution">Proposed Solution</a>
-<ul>
-<li><a href="#the-before-job-process-is-as-follows">The before job process is as follows:</a></li>
-<li><a href="#during-job-process">During job process:</a></li>
-<li><a href="#after-job-process">After job process:</a></li>
-<li><a href="#technical-implementation-will-require">Technical implementation will require:</a></li>
-<li><a href="#core-features">Core features</a></li>
-</ul></li>
+<li><a href="#milestones-daily-update-so-will-be-subjected-to-change">Milestones (Daily update so will be subjected to change)</a></li>
+<li><a href="#existing-solution">Existing Solution</a></li>
+<li><a href="#proposed-solution">Proposed Solution</a></li>
 <li><a href="#alternative-solutions">Alternative Solutions</a></li>
 <li><a href="#testability-monitoring-and-alerting">Testability, Monitoring and Alerting</a></li>
 <li><a href="#cross-team-impact">Cross-Team Impact</a></li>
@@ -272,11 +254,13 @@ Flutter app &ndash; pownthep.io
 
 <h1 id="software-design-document">Software Design Document</h1>
 
-<h2 id="jack-of-all-trades">Jack of All Trades</h2>
+<p><strong>Title:</strong> Errandy</p>
 
-<p>Author: Pownthep Laokhunthot
-Reviewer: Pownthep Laokhunthot
-Created date: 24 of April 2019</p>
+<p><strong>Author:</strong> Pownthep Laokhunthot</p>
+
+<p><strong>Reviewer:</strong>Pownthep Laokhunthot</p>
+
+<p><strong>Created date:</strong> 24 of April 2019</p>
 
 <h2 id="overview">Overview</h2>
 
@@ -295,7 +279,7 @@ Created date: 24 of April 2019</p>
 
 <h2 id="milestones-daily-update-so-will-be-subjected-to-change">Milestones (Daily update so will be subjected to change)</h2>
 
-<h3 id="start-date-24-of-april-2019">Start Date: 24 of April 2019</h3>
+<p>Start Date: 24 of April 2019</p>
 
 <ul>
 <li>Milestone 1 - Mock up user interface: 25 of April 2019</li>
@@ -315,9 +299,8 @@ Created date: 24 of April 2019</p>
 This is a platform for connecting individuals looking for household services with service professionals.
 This application is similar in that it allows handyman businesses to advertise their services on the app.</p>
 
-<p>LINE MAN (<a href="https://play.google.com/store/apps/details?id=com.linecorp.linemanth&amp;hl=th">https://play.google.com/store/apps/details?id=com.linecorp.linemanth&amp;hl=th</a>)</p>
-
-<h3 id="this-application-provides-five-main-services">This application provides five main services:</h3>
+<p><strong>LINE MAN</strong> (<a href="https://play.google.com/store/apps/details?id=com.linecorp.linemanth&amp;hl=th">https://play.google.com/store/apps/details?id=com.linecorp.linemanth&amp;hl=th</a>)
+This application provides five main services:</p>
 
 <ul>
 <li>On demand food delivery</li>
@@ -328,26 +311,29 @@ This application is similar in that it allows handyman businesses to advertise t
 <li>Fast response time.</li>
 </ul>
 
-<p>Grab (<a href="https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&amp;hl=en">https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&amp;hl=en</a>)
-- This application is similar to LINE MAN but offers it at a much cheaper price. The delivery fee can go as low as 10 Baht. Their services include:
-- On demand food delivery
-- On demand transport
-- On demand package delivery
-- On demand messenger
-- On demand grocery shopping
-- Fast response time</p>
-
-<p>Indeed Job Search (<a href="https://play.google.com/store/apps/details?id=com.indeed.android.jobsearch&amp;hl=en">https://play.google.com/store/apps/details?id=com.indeed.android.jobsearch&amp;hl=en</a>)</p>
-
-<h3 id="indeed-provide-the-following-services">Indeed provide the following services:</h3>
+<p><strong>Grab</strong> (<a href="https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&amp;hl=en">https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&amp;hl=en</a>)
+- This application is similar to LINE MAN but offers it at a much cheaper price. The delivery fee can go as low as 10 Baht. Their services include:</p>
 
 <ul>
-<li>Employers can:</li>
+<li>On demand food delivery</li>
+<li>On demand transport</li>
+<li>On demand package delivery</li>
+<li>On demand messenger</li>
+<li>On demand grocery shopping</li>
+<li>Fast response time</li>
+</ul>
+
+<p><strong>Indeed Job Search</strong> (<a href="https://play.google.com/store/apps/details?id=com.indeed.android.jobsearch&amp;hl=en">https://play.google.com/store/apps/details?id=com.indeed.android.jobsearch&amp;hl=en</a>)
+Indeed provide the following services:</p>
+
+<p>Employers can:</p>
+
+<ul>
 <li>Post job</li>
 <li>Respond to job applicants</li>
 </ul>
 
-<h3 id="job-applicant-can">Job applicant can:</h3>
+<p>Job applicant can:</p>
 
 <ul>
 <li>Upload a resume/cv</li>
@@ -359,7 +345,7 @@ This application is similar in that it allows handyman businesses to advertise t
 
 <p>A platform that allows employers and employee to connect and negotiate directly.</p>
 
-<h3 id="the-before-job-process-is-as-follows">The before job process is as follows:</h3>
+<p><strong>The before job process is as follows:</strong></p>
 
 <ul>
 <li>An employer post a job specifying the category, the requirements or qualification, the pay, the estimated workhour, the location, the date and time and the search area.</li>
@@ -373,27 +359,24 @@ This application is similar in that it allows handyman businesses to advertise t
 <li>*Extra feature - change job status to doing</li>
 </ul>
 
-<h3 id="during-job-process">During job process:</h3>
+<p><strong>During job process:</strong>
+- User at this stage will have access to realtime location tracking and direction to the job site as specified by the employer.</p>
 
-<ul>
-<li>User at this stage will have access to realtime location tracking and direction to the job site as specified by the employer.</li>
-</ul>
-
-<h3 id="after-job-process">After job process:</h3>
+<p><strong>After job process:</strong></p>
 
 <ul>
 <li>User will be to review their employer and employee. The review score of each user which will be publicly visable to other users.</li>
 <li>*Extra feature - change job status to doing</li>
 </ul>
 
-<h3 id="technical-implementation-will-require">Technical implementation will require:</h3>
+<p><strong>Technical implementation will require:</strong></p>
 
 <ul>
 <li>Database with realtime update capabilities</li>
 <li>Mobile SDK that provides basic UI components and access to Geolocation API</li>
 </ul>
 
-<h3 id="core-features">Core features</h3>
+<p><strong>Core features</strong></p>
 
 <ul>
 <li>Authentication</li>
@@ -420,8 +403,9 @@ This application is similar in that it allows handyman businesses to advertise t
 
 <h2 id="detailed-scoping-and-timeline">Detailed Scoping and Timeline</h2>
 
-<p>Timeline: 24 of April until 24 of May 2019
-Scope: Implement core features as listed in proposed solution section.</p>
+<p><strong>Timeline:</strong> 24 of April until 24 of May 2019</p>
+
+<p><strong>Scope:</strong> Implement core features as listed in proposed solution section.</p>
 
     </div>
 </div>
