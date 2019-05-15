@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{.Site.BaseURL}}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{.Site.BaseURL}}icons/favicon-32x32.png">
+    <script defer src="{{.Site.BaseURL}}js/quicklink.js"></script>
     <title>{{ block "title" . }}
-    {{ .Site.Title }}
+    
+      {{ .Site.Title }}
     {{ end }}</title>
 
     {{ block "description" .}}
