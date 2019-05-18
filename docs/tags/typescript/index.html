@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="https://pownthep.github.io/portfolio/">
     <link rel="icon" type="image/png" sizes="32x32" href="https://pownthep.github.io/portfolio/icons/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <script defer src="https://pownthep.github.io/portfolio/js/quicklink.js"></script>
     <title>
     
@@ -19,13 +20,12 @@
     html, body {
         margin: 0px;
         scroll-behavior: smooth;
+        font-family: 'Raleway', sans-serif;
     }
     h1, h2, h3, h4, h5 {
-        font-family: Helvetica, Arial, sans-serif, Times;
         color: #001F3F;
     }
     a {
-        font-family: Helvetica, Arial, sans-serif, Times;
         text-decoration: none;
         -webkit-text-emphasis: none;
                 text-emphasis: none;
@@ -104,7 +104,6 @@
         border-radius: 2px;
     }
     code {
-        font-family: Helvetica, Arial, sans-serif, Times;
         font-size: 12pt;
     }
 
@@ -113,7 +112,6 @@
     }
 
     .tags {
-        font-family: Arial, Helvetica, sans-serif;
         background-color: #dae1e7;
         border-radius: 2px;
         padding: 5px;
@@ -161,40 +159,77 @@
             text-align: center;
         }
     }
+    @keyframes fadeInUp {
+        from {
+            transform: translate3d(0,40px,0)
+        }
+    
+        to {
+            transform: translate3d(0,0,0);
+            opacity: 1
+        }
+    }
+    
+    @-webkit-keyframes fadeInUp {
+        from {
+            transform: translate3d(0,40px,0)
+        }
+    
+        to {
+            transform: translate3d(0,0,0);
+            opacity: 1
+        }
+    }
+    
+    
     .animated {
-        -webkit-animation-duration: 1s;
         animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
-      }
-      @-webkit-keyframes fadeInDown {
+        -webkit-animation-duration: 1s;
+        -webkit-animation-fill-mode: both
+    }
+    
+    .animatedFadeInUp {
+        opacity: 0
+    }
+    
+    .fadeInUp {
+        opacity: 0;
+        animation-name: fadeInUp;
+        -webkit-animation-name: fadeInUp;
+    }
+
+    @keyframes fadeInRight {
         from {
-          opacity: 0;
-          
+            transform: translate3d(-40px,0,0)
         }
-      
+    
         to {
-          opacity: 1;
-          
+            transform: translate3d(0,0,0);
+            opacity: 1
         }
-      }
-      
-      @keyframes fadeInDown {
+    }
+    
+    @-webkit-keyframes fadeInRight {
         from {
-          opacity: 0;
-          
+            transform: translate3d(-40px,0,0)
         }
-      
+    
         to {
-          opacity: 1;
-          
+            transform: translate3d(0,0,0);
+            opacity: 1
         }
-      }
-      
-      .fadeInDown {
-        -webkit-animation-name: fadeInDown;
-        animation-name: fadeInDown;
-      }
+    }
+
+    .animatedFadeInRight {
+        opacity: 0
+    }
+    
+    .fadeInRight {
+        opacity: 0;
+        animation-name: fadeInRight;
+        -webkit-animation-name: fadeInRight;
+    }
 </style>
 
 
@@ -212,7 +247,7 @@
     <div class="nav-wrapper">
     <div style="text-align: center; display: inline-block; margin-right: 10px; float: left;">
         <a href="https://pownthep.github.io/portfolio/" aria-label="home page">
-            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="440" height="200" viewBox="0 0 440 200"><g transform="translate(-6198 -3269)"><path d="M125,30h0L31.9,63.2,46.1,186.3,125,230h0l78.9-43.7L218.1,63.2Z" transform="translate(6166.1 3239)" fill="#10365d"/><path d="M125,30V153.4h0V230h0l78.9-43.7L218.1,63.2Z" transform="translate(6166.1 3239)" fill="#001f3f"/><text transform="translate(6226 3394)" fill="#fff" font-size="60" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">POW</tspan><tspan y="0" fill="#8592a1">N</tspan><tspan y="0" fill="#001f3f">THEP.IO</tspan></text></g></svg>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="440" height="200" viewBox="0 0 440 200"><g transform="translate(-6198 -3269)"><path d="M125,30h0L31.9,63.2,46.1,186.3,125,230h0l78.9-43.7L218.1,63.2Z" transform="translate(6166.1 3239)" fill="#10365d"/><path d="M125,30V153.4h0V230h0l78.9-43.7L218.1,63.2Z" transform="translate(6166.1 3239)" fill="#001f3f"/><text transform="translate(6226 3394)" fill="#fff" font-size="60" font-weight="700"><tspan x="0" y="0">POW</tspan><tspan y="0" fill="#8592a1">N</tspan><tspan y="0" fill="#001f3f">THEP.IO</tspan></text></g></svg>
         </a>
     </div>
     <div style="text-align: center; display: inline-block; margin-right: 10px;">
@@ -250,7 +285,7 @@
         </header>
     </article>
     
-        <div class="post animated fadeInDown">
+        <div class="post animated animatedFadeInUp fadeInUp">
             <p>
                 <a href="https://pownthep.github.io/portfolio/posts/content-management-system-with-firebase/" aria-label="Content Management System with Firebase"><b>Content Management System with Firebase</b></a>
             </p>
