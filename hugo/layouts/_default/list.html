@@ -10,21 +10,24 @@
     </article>
     {{ range .Pages }}
         <div class="post animated animatedFadeInUp fadeInUp">
-            <p>
-                <a href="{{.Permalink}}" aria-label="{{.Title}}"><b>{{.Title}}</b></a>
-            </p>
-            <p>
-                {{.Params.description}}
-            </p>
-            <p>
-                Published: {{.Date.Format "2006-01-02"}} <br>
-                Author: {{.Params.Author}}
-            </p>
-            <p>
-                {{ range .Params.tags }}
-                    <span class="tags">#{{ . }}</span>
-                {{ end }}
-            </p>
+            <div class="post-thumbnail"><img src="{{.Permalink}}img/{{.Params.thumbnail}}" alt="" width="200px;"></div>
+            <div class="post-content">
+                <p>
+                    <a href="{{.Permalink}}" aria-label="{{.Title}}"><b>{{.Title}}</b></a>
+                </p>
+                <p>
+                    {{.Params.description}}
+                </p>
+                <p>
+                    Published: {{.Date.Format "2006-01-02"}} <br>
+                    Author: {{.Params.Author}}
+                </p>
+                <p>
+                    {{ range .Params.tags }}
+                        <span class="tags tags-{{ . }}"> <b>#{{ . }}</b></span>
+                    {{ end }}
+                </p>
+            </div>
         </div>
     {{ end }}
     <script>

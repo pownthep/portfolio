@@ -4,6 +4,7 @@ date: 2017-03-26
 publishdate: 2017-03-26
 author: Pownthep Laokhunthot
 description: Software Design Document for a Flutter application 'Errandy'.
+thumbnail: "index.svg"
 tags: 
     - flutter
     - dart
